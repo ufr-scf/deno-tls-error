@@ -2,7 +2,7 @@
 
 The code in main.ts opens a socket, connects to `google.com:443` and performs upgrade the TCP connection to TLS.
 
-This used to worked fine versions 2.0.2 and below. Version 2.0.3 broke this functionality. The commit which introduced the bug is this one: https://github.com/denoland/deno/commit/c5536669b6e1c4c9e76223d95f222a999df9b19e.
+This used to worked fine versions 2.0.2 and below. Version 2.0.3 broke this functionality. The commit after which this started occuring is this one: https://github.com/denoland/deno/commit/c5536669b6e1c4c9e76223d95f222a999df9b19e.
 
 To reproduce this bug, please execute `deno run -A main.ts`.
 You can check your installed deno version with `deno -v`.
